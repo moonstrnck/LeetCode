@@ -15,7 +15,7 @@ var chunk = function(arr, size) {
     let inner = [];
     
     for (let i = 0; i < arr.length; i++) {
-        if (count === 1 || i === arr.length - 1) {
+        if (count === 1) {
             inner.push(arr[i]);
             result.push(inner);
             count = size;
@@ -26,5 +26,6 @@ var chunk = function(arr, size) {
         }
     }
     
+    if (inner.length > 0) result.push(inner);
     return result;
 };
