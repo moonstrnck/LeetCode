@@ -2,7 +2,12 @@
  * @param {Array} arr
  * @param {number} size
  * @return {Array}
-*/
+ 
+ 
+ /*
+    내부 배열에 size가 0될때까지 push
+    
+ */
 var chunk = function(arr, size) {
     const result = [];
     
