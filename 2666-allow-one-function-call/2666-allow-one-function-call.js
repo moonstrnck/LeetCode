@@ -10,7 +10,7 @@ const once = function(fn) {
       if (!hasBeenCalled) {
         hasBeenCalled = true;
     
-        return fn(...args);
+        return fn(...args); // test
       }
     }
 };
