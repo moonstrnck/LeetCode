@@ -21,7 +21,7 @@ var evalRPN = function(tokens) {
                 stack.push(firstNum * secondNum);
             }
             else if (token === "/") {
-                stack.push(firstNum / secondNum | 0);
+                stack.push(Math.trunc(firstNum / secondNum));
             }
 
         } else {
